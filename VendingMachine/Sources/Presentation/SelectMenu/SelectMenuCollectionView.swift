@@ -4,6 +4,8 @@ import Then
 
 final class SelectSnackViewController: UIViewController {
     
+    
+    
     var menu: [MenuEntity] = [
         MenuEntity(menuImage: "랜덤", menuName: "랜덤1", menuPrice: 1500, menuNumber: 1),
         MenuEntity(menuImage: "랜덤", menuName: "랜덤4", menuPrice: 1500, menuNumber: 4),
