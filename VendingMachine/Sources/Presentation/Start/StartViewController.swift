@@ -33,6 +33,7 @@ final class StartViewController: UIViewController {
         $0.titleLabel?.font = .Vending(size: 50, family: .medium)
         $0.layer.cornerRadius = 65
         $0.clipsToBounds = true
+        $0.addTarget(self, action: #selector(helpButtonTapped), for: .touchUpInside)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -78,6 +79,11 @@ final class StartViewController: UIViewController {
     
     @objc func menuButtonTapped(_ sender: UIButton){
         let vc = SelectSnackViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func helpButtonTapped(_ sender: UIButton){
+        let vc = HelpViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

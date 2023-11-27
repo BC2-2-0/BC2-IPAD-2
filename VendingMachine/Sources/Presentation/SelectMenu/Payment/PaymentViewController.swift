@@ -106,9 +106,9 @@ final class PaymentViewController: UIViewController {
     }
     
     func makeQRCode(){
-//        connectURL = "http://13.125.77.165:3000/send1?price=3000&quantity=3&item=jelly"
+        let baseURL = "http://15.164.60.222:3000/receive"
         
-        connectURL = "http://13.125.77.165:3000/send1?price=\(totalPrice)&quantity=\(totalQuantity)&item=\(menuName)&number=\(menuNumber)"
+        connectURL = "\(baseURL)/send1?price=\(totalPrice)&quantity=\(totalQuantity)&item=\(menuName)&number=\(menuNumber)"
         guard let encodedStr = connectURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
         
         
@@ -128,7 +128,7 @@ final class PaymentViewController: UIViewController {
     }
     
     func serverSendEvent(){
-        let eventSourceURL = "http://13.125.77.165:3000/receive"
+        let eventSourceURL = "http://15.164.60.222:3000/receive"
         let eventSource = EventSource(request: .init(url: URL(string: eventSourceURL)!))
         eventSource.connect()
         

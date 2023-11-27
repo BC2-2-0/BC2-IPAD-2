@@ -12,11 +12,12 @@
 		781C661B29E840AD00675809 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781C661A29E840AD00675809 /* MenuCell.swift */; };
 		78374C7A2A1373AF002A2CF0 /* PaymentFinishedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78374C792A1373AF002A2CF0 /* PaymentFinishedData.swift */; };
 		784188402A09104C00F71E6F /* LDSwiftEventSource in Frameworks */ = {isa = PBXBuildFile; productRef = 7841883F2A09104C00F71E6F /* LDSwiftEventSource */; };
+		7861FA422B0E25A10067D342 /* EventSource in Frameworks */ = {isa = PBXBuildFile; productRef = 7861FA412B0E25A10067D342 /* EventSource */; };
 		78690DD32A010B410072D7E5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78690DD22A010B410072D7E5 /* Menu.swift */; };
 		786B88232A0FC6DD00198BA9 /* FailPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786B88222A0FC6DD00198BA9 /* FailPaymentViewController.swift */; };
-		78808C972A0D2F5C00FB308B /* EventSource in Frameworks */ = {isa = PBXBuildFile; productRef = 78808C962A0D2F5C00FB308B /* EventSource */; };
 		7882856929F9383700E85AAD /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 7882856829F9383700E85AAD /* QRCode */; };
 		7882856C29F9388400E85AAD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 7882856B29F9388400E85AAD /* PinLayout */; };
+		78C4DF772B14D1CD0032C2A1 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4DF762B14D1CD0032C2A1 /* HelpViewController.swift */; };
 		78CEC4AE29E25AFE00E089A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CEC4AD29E25AFE00E089A6 /* AppDelegate.swift */; };
 		78CEC4B029E25AFE00E089A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CEC4AF29E25AFE00E089A6 /* SceneDelegate.swift */; };
 		78CEC4B229E25AFE00E089A6 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CEC4B129E25AFE00E089A6 /* StartViewController.swift */; };
@@ -47,6 +48,7 @@
 		78374C792A1373AF002A2CF0 /* PaymentFinishedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFinishedData.swift; sourceTree = "<group>"; };
 		78690DD22A010B410072D7E5 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		786B88222A0FC6DD00198BA9 /* FailPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailPaymentViewController.swift; sourceTree = "<group>"; };
+		78C4DF762B14D1CD0032C2A1 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		78CEC4AA29E25AFE00E089A6 /* VendingMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CEC4AD29E25AFE00E089A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78CEC4AF29E25AFE00E089A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 				78CEC4C329E2618F00E089A6 /* SnapKit in Frameworks */,
 				78CEC4C629E2619A00E089A6 /* Then in Frameworks */,
 				7882856C29F9388400E85AAD /* PinLayout in Frameworks */,
-				78808C972A0D2F5C00FB308B /* EventSource in Frameworks */,
+				7861FA422B0E25A10067D342 /* EventSource in Frameworks */,
 				7882856929F9383700E85AAD /* QRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +105,14 @@
 				78374C792A1373AF002A2CF0 /* PaymentFinishedData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		78C4DF732B14D1A50032C2A1 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				78C4DF762B14D1CD0032C2A1 /* HelpViewController.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 		78CEC4A129E25AFE00E089A6 = {
@@ -164,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				78CEC4CD29E267B600E089A6 /* Start */,
+				78C4DF732B14D1A50032C2A1 /* Help */,
 				78CEC4CE29E267D800E089A6 /* SelectMenu */,
 			);
 			path = Presentation;
@@ -278,7 +289,7 @@
 				7882856829F9383700E85AAD /* QRCode */,
 				7882856B29F9388400E85AAD /* PinLayout */,
 				7841883F2A09104C00F71E6F /* LDSwiftEventSource */,
-				78808C962A0D2F5C00FB308B /* EventSource */,
+				7861FA412B0E25A10067D342 /* EventSource */,
 			);
 			productName = VendingMachine;
 			productReference = 78CEC4AA29E25AFE00E089A6 /* VendingMachine.app */;
@@ -314,7 +325,7 @@
 				7882856729F9383700E85AAD /* XCRemoteSwiftPackageReference "QRCode" */,
 				7882856A29F9388400E85AAD /* XCRemoteSwiftPackageReference "PinLayout" */,
 				7841883E2A09104C00F71E6F /* XCRemoteSwiftPackageReference "swift-eventsource" */,
-				78808C952A0D2F5C00FB308B /* XCRemoteSwiftPackageReference "EventSource" */,
+				7861FA402B0E25A10067D342 /* XCRemoteSwiftPackageReference "EventSource" */,
 			);
 			productRefGroup = 78CEC4AB29E25AFE00E089A6 /* Products */;
 			projectDirPath = "";
@@ -355,6 +366,7 @@
 				781C661B29E840AD00675809 /* MenuCell.swift in Sources */,
 				78CEC4B229E25AFE00E089A6 /* StartViewController.swift in Sources */,
 				786B88232A0FC6DD00198BA9 /* FailPaymentViewController.swift in Sources */,
+				78C4DF772B14D1CD0032C2A1 /* HelpViewController.swift in Sources */,
 				78CEC4D329E2686000E089A6 /* PaymentViewController.swift in Sources */,
 				78CEC4C829E2629000E089A6 /* HexColor.swift in Sources */,
 				78690DD32A010B410072D7E5 /* Menu.swift in Sources */,
@@ -588,9 +600,9 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		78808C952A0D2F5C00FB308B /* XCRemoteSwiftPackageReference "EventSource" */ = {
+		7861FA402B0E25A10067D342 /* XCRemoteSwiftPackageReference "EventSource" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Recouse/EventSource";
+			repositoryURL = "https://github.com/Recouse/EventSource.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.0.5;
@@ -636,9 +648,9 @@
 			package = 7841883E2A09104C00F71E6F /* XCRemoteSwiftPackageReference "swift-eventsource" */;
 			productName = LDSwiftEventSource;
 		};
-		78808C962A0D2F5C00FB308B /* EventSource */ = {
+		7861FA412B0E25A10067D342 /* EventSource */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 78808C952A0D2F5C00FB308B /* XCRemoteSwiftPackageReference "EventSource" */;
+			package = 7861FA402B0E25A10067D342 /* XCRemoteSwiftPackageReference "EventSource" */;
 			productName = EventSource;
 		};
 		7882856829F9383700E85AAD /* QRCode */ = {
